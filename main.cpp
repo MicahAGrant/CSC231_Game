@@ -2,6 +2,7 @@
 #include "heros.h"
 #include "monsters.h"
 #include <iostream>
+#include <randomness.h>
 
 #include "entity.h"
 
@@ -18,9 +19,16 @@ int main() {
         // std::cout << hero->get_position() << '\n';
         Heros::make_knight(hero);
 
-        for (int i = 0; i < 10; ++i) {
-            std::shared_ptr<Entity> monster = engine.create_monster();
-            Monsters::make_demon(monster);
+        for (int i = 0; i < 20; ++i) {
+            if (probability(20)) {
+                std::shared_ptr<Entity> monster = engine.create_monster();
+                Monsters::make_demon(monster);
+
+            }
+            else {
+                std::shared_ptr<Entity> monster2 = engine.create_monster();
+                Monsters::make_skeleton(monster2);
+            }
         }
 
         engine.run();

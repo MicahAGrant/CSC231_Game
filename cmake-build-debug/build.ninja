@@ -5461,6 +5461,14 @@ build content/actions/CMakeFiles/actions.dir/__/entities/wander.cpp.obj: CXX_COM
   OBJECT_DIR = content\actions\CMakeFiles\actions.dir
   OBJECT_FILE_DIR = content\actions\CMakeFiles\actions.dir\__\entities
 
+build content/actions/CMakeFiles/actions.dir/opendoor.cpp.obj: CXX_COMPILER__actions_unscanned_Debug C$:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/content/actions/opendoor.cpp || cmake_object_order_depends_target_actions
+  DEFINES = -Dactions_EXPORTS
+  DEP_FILE = content\actions\CMakeFiles\actions.dir\opendoor.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -g -Wall -Wextra -pedantic
+  INCLUDES = -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/content/actions -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/util -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/graphics -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl-build/include -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl-build/include/SDL2 -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl-build/include-config-debug/SDL2 -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_image-src/include -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/dungeon -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/input -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/audio -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-src/include -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/content/events
+  OBJECT_DIR = content\actions\CMakeFiles\actions.dir
+  OBJECT_FILE_DIR = content\actions\CMakeFiles\actions.dir
+
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target actions
@@ -5469,7 +5477,7 @@ build content/actions/CMakeFiles/actions.dir/__/entities/wander.cpp.obj: CXX_COM
 #############################################
 # Link the shared library libactions.dll
 
-build libactions.dll content/actions/libactions.dll.a: CXX_SHARED_LIBRARY_LINKER__actions_Debug content/actions/CMakeFiles/actions.dir/rest.cpp.obj content/actions/CMakeFiles/actions.dir/move.cpp.obj content/actions/CMakeFiles/actions.dir/closedoor.cpp.obj content/actions/CMakeFiles/actions.dir/__/entities/wander.cpp.obj | content/events/libevents.dll.a engine/libengine.dll.a engine/dungeon/libdungeon.dll.a engine/graphics/libgraphics.dll.a engine/util/libutil.dll.a _deps/sdl_image-build/libSDL2_imaged.dll.a engine/input/libinput.dll.a engine/audio/libaudio.dll.a _deps/sdl_mixer-build/libSDL2_mixerd.dll.a _deps/sdl-build/libSDL2d.dll.a || SDL2_imaged.dll SDL2_mixerd.dll SDL2d.dll libaudio.dll libdungeon.dll libengine.dll libevents.dll libgraphics.dll libinput.dll libutil.dll
+build libactions.dll content/actions/libactions.dll.a: CXX_SHARED_LIBRARY_LINKER__actions_Debug content/actions/CMakeFiles/actions.dir/rest.cpp.obj content/actions/CMakeFiles/actions.dir/move.cpp.obj content/actions/CMakeFiles/actions.dir/closedoor.cpp.obj content/actions/CMakeFiles/actions.dir/__/entities/wander.cpp.obj content/actions/CMakeFiles/actions.dir/opendoor.cpp.obj | content/events/libevents.dll.a engine/libengine.dll.a engine/dungeon/libdungeon.dll.a engine/graphics/libgraphics.dll.a engine/util/libutil.dll.a _deps/sdl_image-build/libSDL2_imaged.dll.a engine/input/libinput.dll.a engine/audio/libaudio.dll.a _deps/sdl_mixer-build/libSDL2_mixerd.dll.a _deps/sdl-build/libSDL2d.dll.a || SDL2_imaged.dll SDL2_mixerd.dll SDL2d.dll libaudio.dll libdungeon.dll libengine.dll libevents.dll libgraphics.dll libinput.dll libutil.dll
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = content/events/libevents.dll.a  engine/libengine.dll.a  engine/dungeon/libdungeon.dll.a  engine/graphics/libgraphics.dll.a  engine/util/libutil.dll.a  _deps/sdl_image-build/libSDL2_imaged.dll.a  engine/input/libinput.dll.a  engine/audio/libaudio.dll.a  _deps/sdl_mixer-build/libSDL2_mixerd.dll.a  _deps/sdl-build/libSDL2d.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = content\actions\CMakeFiles\actions.dir
@@ -5597,6 +5605,14 @@ build content/entities/CMakeFiles/entities.dir/monsters.cpp.obj: CXX_COMPILER__e
   OBJECT_DIR = content\entities\CMakeFiles\entities.dir
   OBJECT_FILE_DIR = content\entities\CMakeFiles\entities.dir
 
+build content/entities/CMakeFiles/entities.dir/__/actions/opendoor.cpp.obj: CXX_COMPILER__entities_unscanned_Debug C$:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/content/actions/opendoor.cpp || cmake_object_order_depends_target_entities
+  DEFINES = -Dentities_EXPORTS
+  DEP_FILE = content\entities\CMakeFiles\entities.dir\__\actions\opendoor.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -g -Wall -Wextra -pedantic
+  INCLUDES = -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/content/entities -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/util -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/graphics -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl-build/include -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl-build/include/SDL2 -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl-build/include-config-debug/SDL2 -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_image-src/include -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/dungeon -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/input -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/engine/audio -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-src/include -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/content/actions -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/content/events -IC:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/content/items
+  OBJECT_DIR = content\entities\CMakeFiles\entities.dir
+  OBJECT_FILE_DIR = content\entities\CMakeFiles\entities.dir\__\actions
+
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target entities
@@ -5605,7 +5621,7 @@ build content/entities/CMakeFiles/entities.dir/monsters.cpp.obj: CXX_COMPILER__e
 #############################################
 # Link the shared library libentities.dll
 
-build libentities.dll content/entities/libentities.dll.a: CXX_SHARED_LIBRARY_LINKER__entities_Debug content/entities/CMakeFiles/entities.dir/heros.cpp.obj content/entities/CMakeFiles/entities.dir/monsters.cpp.obj | content/actions/libactions.dll.a content/items/libitems.dll.a content/events/libevents.dll.a engine/libengine.dll.a engine/dungeon/libdungeon.dll.a engine/graphics/libgraphics.dll.a engine/util/libutil.dll.a _deps/sdl_image-build/libSDL2_imaged.dll.a engine/input/libinput.dll.a engine/audio/libaudio.dll.a _deps/sdl_mixer-build/libSDL2_mixerd.dll.a _deps/sdl-build/libSDL2d.dll.a || SDL2_imaged.dll SDL2_mixerd.dll SDL2d.dll libactions.dll libaudio.dll libdungeon.dll libengine.dll libevents.dll libgraphics.dll libinput.dll libitems.dll libutil.dll
+build libentities.dll content/entities/libentities.dll.a: CXX_SHARED_LIBRARY_LINKER__entities_Debug content/entities/CMakeFiles/entities.dir/heros.cpp.obj content/entities/CMakeFiles/entities.dir/monsters.cpp.obj content/entities/CMakeFiles/entities.dir/__/actions/opendoor.cpp.obj | content/actions/libactions.dll.a content/items/libitems.dll.a content/events/libevents.dll.a engine/libengine.dll.a engine/dungeon/libdungeon.dll.a engine/graphics/libgraphics.dll.a engine/util/libutil.dll.a _deps/sdl_image-build/libSDL2_imaged.dll.a engine/input/libinput.dll.a engine/audio/libaudio.dll.a _deps/sdl_mixer-build/libSDL2_mixerd.dll.a _deps/sdl-build/libSDL2d.dll.a || SDL2_imaged.dll SDL2_mixerd.dll SDL2d.dll libactions.dll libaudio.dll libdungeon.dll libengine.dll libevents.dll libgraphics.dll libinput.dll libitems.dll libutil.dll
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = content/actions/libactions.dll.a  content/items/libitems.dll.a  content/events/libevents.dll.a  engine/libengine.dll.a  engine/dungeon/libdungeon.dll.a  engine/graphics/libgraphics.dll.a  engine/util/libutil.dll.a  _deps/sdl_image-build/libSDL2_imaged.dll.a  engine/input/libinput.dll.a  engine/audio/libaudio.dll.a  _deps/sdl_mixer-build/libSDL2_mixerd.dll.a  _deps/sdl-build/libSDL2d.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = content\entities\CMakeFiles\entities.dir

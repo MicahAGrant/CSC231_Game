@@ -6,6 +6,7 @@
 #include "action.h"
 #include "closedoor.h"
 #include "move.h"
+#include "../actions/opendoor.h"
 #include "rest.h"
 #include "wander.h"
 
@@ -37,6 +38,9 @@ namespace Heros {
         }
         if (key == "C") {
             return std::make_unique<CloseDoor>();
+        }
+        if (key == "O") {
+            return std::make_unique<OpenDoor>();
         }
         else if (key == "Z") {
             return std::make_unique<Wander>();

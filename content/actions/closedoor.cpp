@@ -3,9 +3,7 @@
 //
 
 #include "closedoor.h"
-
 #include <iostream>
-
 #include "entity.h"
 #include "engine.h"
 #include "updatefov.h"
@@ -22,19 +20,19 @@ Result CloseDoor::perform(Engine& engine, std::shared_ptr<Entity> entity) {
             tile.door->close();
             closed_any_doors = true;
         }
-        else if (tile.has_door() && !tile.door->is_open()) {
-            tile.door->open();
-        }
+        // else if (tile.has_door() && !tile.door->is_open()) {
+        //     tile.door->open();
+        // }
     }
     // if we closed any doors, update FOV
     if (closed_any_doors) {
         engine.events.create_event<UpdateFOV>();
         return success();
     }
-    else if (!closed_any_doors) {
-        engine.events.create_event<UpdateFOV>();
-        return success();
-    }
+    // else if (!closed_any_doors) {
+    //     engine.events.create_event<UpdateFOV>();
+    //     return success();
+    // }
     else {
         return failure();
     }

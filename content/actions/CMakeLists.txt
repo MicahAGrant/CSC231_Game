@@ -4,6 +4,8 @@ add_library(actions
         closedoor.cpp closedoor.h
         ../entities/wander.cpp
         ../entities/wander.h
+        opendoor.cpp
+        opendoor.h
 )
 
 target_include_directories(actions PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
