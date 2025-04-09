@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/sdl_mixer-build",
+		"source" : "cmake-build-debug/_deps/sdl_mixer-src"
+	}
+}

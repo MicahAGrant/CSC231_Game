@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/CMakeFiles/sdl_mixer-populate"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/CMakeFiles/sdl_mixer-populate.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/CMakeFiles/sdl_mixer-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sdl_mixer-populate"
+		],
+		"name" : "sdl_mixer-populate"
+	}
+}
