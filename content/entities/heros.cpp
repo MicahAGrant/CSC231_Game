@@ -5,8 +5,9 @@
 #include "engine.h"
 #include "action.h"
 #include "closedoor.h"
+#include "dash.h"
 #include "move.h"
-#include "../actions/opendoor.h"
+#include "opendoor.h"
 #include "rest.h"
 #include "wander.h"
 
@@ -24,27 +25,30 @@ namespace Heros {
         if (key == "Right") {
             return std::make_unique<Move>(Vec {1,0});
         }
-        if (key == "Left") {
+        else if (key == "Left") {
             return std::make_unique<Move>(Vec {-1,0});
         }
-        if (key == "Up") {
+        else if (key == "Up") {
             return std::make_unique<Move>(Vec {0,1});
         }
-        if (key == "Down") {
+        else if (key == "Down") {
             return std::make_unique<Move>(Vec {0,-1});
         }
-        if (key == "R") {
+        else if (key == "R") {
             return std::make_unique<Rest>();
         }
-        if (key == "C") {
+        else if (key == "C") {
             return std::make_unique<CloseDoor>();
         }
-        if (key == "O") {
-            return std::make_unique<OpenDoor>();
-        }
+        // else if (key == "O") {
+        //     return std::make_unique<OpenDoor>();
+        // }
         else if (key == "Z") {
             return std::make_unique<Wander>();
         }
+        // else if (key == "D") {
+        //     return std::make_unique<Dash>(Vec {2,0});
+        // }
 
         return nullptr;
     }

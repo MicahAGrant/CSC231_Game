@@ -19,6 +19,12 @@ namespace Monsters {
         monster->behavior = default_behavior;
     }
 
+    void make_muddy(std::shared_ptr<Entity> monster) {
+        monster->set_sprite("muddy");
+        monster->set_max_health(25);
+        monster->behavior = default_behavior;
+    }
+
     std::unique_ptr<Action> default_behavior(Engine& engine, Entity& entity) {
         if (entity.is_visible() && engine.hero) {
             std::vector<Vec> path = engine.dungeon.calculate_path(entity.get_position(),

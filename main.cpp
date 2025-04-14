@@ -20,10 +20,15 @@ int main() {
         Heros::make_knight(hero);
 
         for (int i = 0; i < 20; ++i) {
-            if (probability(20)) {
-                std::shared_ptr<Entity> monster = engine.create_monster();
-                Monsters::make_demon(monster);
-
+            if (probability(50)) {
+                if (probability(50)) {
+                    std::shared_ptr<Entity> monster = engine.create_monster();
+                    Monsters::make_demon(monster);
+                }
+                else {
+                    std::shared_ptr<Entity> monster3 = engine.create_monster();
+                    Monsters::make_muddy(monster3);
+                }
             }
             else {
                 std::shared_ptr<Entity> monster2 = engine.create_monster();
