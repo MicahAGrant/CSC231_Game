@@ -1,6 +1,6 @@
 "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.2.0.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\grant\Documents\WLC\Spring2025\CSC231\ClassPersonal\game -B C:\Users\grant\Documents\WLC\Spring2025\CSC231\ClassPersonal\game\cmake-build-debug
 -- Populating sdl
--- Configuring done (0.3s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl-subbuild
 [0/7] Performing update step for 'sdl-populate'
@@ -148,7 +148,7 @@
 --  Build Static Library with Position Independent Code: OFF
 -- 
 -- Populating sdl_mixer
--- Configuring done (0.2s)
+-- Configuring done (0.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_mixer-subbuild
 [0/7] Performing update step for 'sdl_mixer-populate'
@@ -161,7 +161,7 @@
 -- Configuring SDL2_mixer 2.8.1
 -- Enabled ogg music: using stb_vorbis
 -- Populating sdl_image
--- Configuring done (0.2s)
+-- Configuring done (0.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug/_deps/sdl_image-subbuild
 [0/7] Performing update step for 'sdl_image-populate'
@@ -182,6 +182,6 @@
 -- SDL2_image backends:
 -- - enabled:  stb bmp gif jpg lbm pcx png pnm qoi svg tga xcf xpm xv
 -- - disabled: imageio wic avif jxl tif webp
--- Configuring done (7.3s)
--- Generating done (0.3s)
+-- Configuring done (5.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/grant/Documents/WLC/Spring2025/CSC231/ClassPersonal/game/cmake-build-debug

@@ -2,6 +2,7 @@
 #include <randomness.h>
 #include "engine.h"
 #include "entity.h"
+#include "knife.h"
 #include "move.h"
 #include "rest.h"
 #include "wander.h"
@@ -10,18 +11,24 @@ namespace Monsters {
     void make_demon(std::shared_ptr<Entity> monster) {
         monster->set_sprite("demon_big");
         monster->set_max_health(40);
+        monster->set_team(Team::Monster);
         monster->behavior = default_behavior;
     }
 
     void make_skeleton(std::shared_ptr<Entity> monster) {
         monster->set_sprite("skeleton");
-        monster->set_max_health(15);
+        monster->set_max_health(10);
+        monster->set_team(Team::Monster);
         monster->behavior = default_behavior;
+
+        // monster weapon
+        monster->add_to_inventory(std::make_shared<Knife>(1));
     }
 
     void make_muddy(std::shared_ptr<Entity> monster) {
         monster->set_sprite("muddy");
-        monster->set_max_health(25);
+        monster->set_max_health(20);
+        monster->set_team(Team::Monster);
         monster->behavior = default_behavior;
     }
 
