@@ -5,6 +5,7 @@
 #include <randomness.h>
 
 #include "entity.h"
+#include "potion.h"
 
 int main() {
     try {
@@ -12,12 +13,14 @@ int main() {
         Engine engine{settings};
 
         std::shared_ptr<Entity> hero = engine.create_hero();
-        // hero->set_sprite("knight");
-        // Vec pos = hero->get_position();
-        // Tile& tile = engine.dungeon.get_tile(pos);
-        // Vec new_position = pos + Vec{1,1};
-        // std::cout << hero->get_position() << '\n';
         Heros::make_knight(hero);
+
+        for (int i = 0; i < 2; ++i) {
+            Vec position = engine.dungeon.random_open_room_tile();
+            Tile& tile = engine.dungeon.get_tile(position);
+            tile.item = std::make_shared<Potion>(-3);
+            tile.item->sprite = engine.graphics.get_sprite(tile.item->name);
+        }
 
         for (int i = 0; i < 20; ++i) {
             if (probability(50)) {

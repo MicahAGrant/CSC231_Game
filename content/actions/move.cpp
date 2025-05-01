@@ -5,6 +5,7 @@
 
 #include "attack.h"
 #include "opendoor.h"
+#include "pickup.h"
 #include "rest.h"
 
 Move::Move(Vec direction)
@@ -31,6 +32,9 @@ Result Move::perform(Engine &engine, std::shared_ptr<Entity> entity) {
     }
     else if (tile.has_entity() && (entity->get_team() != tile.entity->get_team())) {
         return alternative(Attack{*tile.entity});
+    }
+    if (tile.has_item()) {
+        engine.events.create_event<Pickup>(tile, *entity);
     }
     else {
         Vec new_direction  = entity->get_position() + direction;

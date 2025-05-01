@@ -8,6 +8,14 @@ add_library(events
         thrust.h
         swing.cpp
         swing.h
+        animationevent.cpp
+        animationevent.h
+        animationspin.cpp
+        animationspin.h
+        audioevent.cpp
+        audioevent.h
+        pickup.cpp
+        pickup.h
 )
 
 target_include_directories(events PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

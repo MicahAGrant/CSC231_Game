@@ -6,8 +6,9 @@
 Hit::Hit(Entity& entity, int damage)
     : entity{entity}, damage{damage} {}
 
-void Hit::execute(Engine&) {
+void Hit::execute(Engine& engine) {
     // add an audio event for the hit
+    // engine.audio.play_sound("hit");
     entity.take_damage(damage);
 }
 
