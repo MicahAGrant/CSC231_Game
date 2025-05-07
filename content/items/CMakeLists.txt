@@ -8,6 +8,10 @@ add_library(items
         knife.h
         staff_green.cpp
         staff_green.h
+        staff_red.cpp
+        staff_red.h
+        teleport_potion.cpp
+        teleport_potion.h
 )
 
 target_include_directories(items PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

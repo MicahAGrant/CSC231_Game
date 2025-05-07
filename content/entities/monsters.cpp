@@ -1,5 +1,7 @@
 #include "monsters.h"
 #include <randomness.h>
+
+#include "bite.h"
 #include "engine.h"
 #include "entity.h"
 #include "knife.h"
@@ -13,6 +15,7 @@ namespace Monsters {
         monster->set_max_health(40);
         monster->set_team(Team::Monster);
         monster->behavior = default_behavior;
+        monster->add_to_inventory(std::make_shared<Bite>(1));
     }
 
     void make_skeleton(std::shared_ptr<Entity> monster) {
@@ -22,7 +25,7 @@ namespace Monsters {
         monster->behavior = default_behavior;
 
         // monster weapon
-        monster->add_to_inventory(std::make_shared<Knife>(1));
+        monster->add_to_inventory(std::make_shared<Knife>(3));
     }
 
     void make_muddy(std::shared_ptr<Entity> monster) {
@@ -30,6 +33,7 @@ namespace Monsters {
         monster->set_max_health(20);
         monster->set_team(Team::Monster);
         monster->behavior = default_behavior;
+        monster->add_to_inventory(std::make_shared<Knife>(1));
     }
 
     std::unique_ptr<Action> default_behavior(Engine& engine, Entity& entity) {

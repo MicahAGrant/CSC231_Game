@@ -11,6 +11,8 @@ add_library(actions
         use.cpp
         use.h
         use.cpp
+        staff_red_attack.cpp
+        staff_red_attack.h
         attack.cpp
         attack.h
 )

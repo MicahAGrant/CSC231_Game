@@ -2,7 +2,6 @@
 #include "engine.h"
 #include "entity.h"
 #include <vec.h>
-
 #include "attack.h"
 #include "opendoor.h"
 #include "pickup.h"
@@ -24,16 +23,16 @@ Result Move::perform(Engine &engine, std::shared_ptr<Entity> entity) {
     if (tile.is_wall()) {
         return failure();
     }
-    else if (tile.has_entity() && entity->get_team() == tile.entity->get_team()) {
+    if (tile.has_entity() && entity->get_team() == tile.entity->get_team()) {
         return alternative(Rest{});
     }
-    else if (tile.has_door() && !tile.door->is_open()) {
+    if (tile.has_door() && !tile.door->is_open()) {
         return alternative(OpenDoor{*tile.door});
     }
-    else if (tile.has_entity() && (entity->get_team() != tile.entity->get_team())) {
+    if (tile.has_entity() && (entity->get_team() != tile.entity->get_team())) {
         return alternative(Attack{*tile.entity});
     }
-    if (tile.has_item()) {
+    if (tile.has_item() && (entity->get_team() == Team::Hero)) {
         engine.events.create_event<Pickup>(tile, *entity);
     }
     else {

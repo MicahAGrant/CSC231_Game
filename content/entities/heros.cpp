@@ -2,6 +2,7 @@
 #include <iostream>
 #include "engine.h"
 #include "action.h"
+#include "attack.h"
 #include "closedoor.h"
 #include "dash.h"
 #include "move.h"
@@ -9,13 +10,16 @@
 #include "wander.h"
 #include "potion.h"
 #include "staff_green.h"
+#include "staff_red.h"
+#include "staff_red_attack.h"
 #include "use.h"
 #include "sword_red_gem.h"
+#include "teleport_potion.h"
 
 namespace Heros {
     void make_knight(std::shared_ptr<Entity> hero) {
         hero->set_sprite("knight");
-        hero->set_max_health(10);
+        hero->set_max_health(20);
         hero->behavior = default_behavior;
         hero->set_team(Team::Hero);
 
@@ -23,6 +27,8 @@ namespace Heros {
         hero->add_to_inventory(std::make_shared<Potion>(-3));
         hero->add_to_inventory(std::make_shared<Sword_red_gem>(5));
         hero->add_to_inventory(std::make_shared<Staff_green>(3));
+        hero->add_to_inventory(std::make_shared<Staff_red>(5));
+        hero->add_to_inventory(std::make_shared<TeleportPotion>());
     }
 
     std::unique_ptr<Action> default_behavior(Engine& engine, Entity& entity) {
@@ -32,25 +38,37 @@ namespace Heros {
         if (key == "Right") {
             return std::make_unique<Move>(Vec {1,0});
         }
-        else if (key == "Left") {
+        if (key == "Left") {
             return std::make_unique<Move>(Vec {-1,0});
         }
-        else if (key == "Up") {
+        if (key == "Up") {
             return std::make_unique<Move>(Vec {0,1});
         }
-        else if (key == "Down") {
+        if (key == "Down") {
             return std::make_unique<Move>(Vec {0,-1});
         }
-        else if (key == "R") {
+        if (key == "R") {
             return std::make_unique<Rest>();
         }
-        else if (key == "C") {
+        if (key == "C") {
             return std::make_unique<CloseDoor>();
         }
-        else if (key == "Z") {
+        if (key == "Z") {
             return std::make_unique<Wander>();
         }
-        else if (key == "E") {
+        if (key == "W") {
+            return std::make_unique<Staff_red_attack>(Vec {0,1});
+        }
+        if (key == "A") {
+            return std::make_unique<Staff_red_attack>(Vec {-1,0});
+        }
+        if (key == "S") {
+            return std::make_unique<Staff_red_attack>(Vec {0,-1});
+        }
+        if (key == "D") {
+            return std::make_unique<Staff_red_attack>(Vec {1,0});
+        }
+        if (key == "E") {
             entity.switch_to_next_item();
         }
         else if (!key.empty() && std::isdigit(key.at(0))) { // gets a number

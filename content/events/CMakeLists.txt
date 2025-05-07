@@ -16,6 +16,8 @@ add_library(events
         audioevent.h
         pickup.cpp
         pickup.h
+        teleport.cpp
+        teleport.h
 )
 
 target_include_directories(events PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

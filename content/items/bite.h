@@ -8,8 +8,7 @@ class Entity;
 class Bite : public Item {
 public:
     Bite(int damage);
-
-    void use(Engine& engine, Entity&, Entity& defender) override;
+    void use(Engine& engine, Entity& attacker, Entity& defender) override;
 
 private:
     int damage;

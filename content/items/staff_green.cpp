@@ -34,7 +34,7 @@ void Staff_green::use(Engine &engine, Entity &attacker, Entity& defender) {
         Vec new_pos = attacker.get_position() + area.at(i);
         Tile& tile = engine.dungeon.get_tile(attacker.get_position() + area.at(i));
         if (tile.has_entity()) {
-            animation->add_next<Hit>(defender, damage);
+            animation->add_next<Hit>(*tile.entity, damage);
             animation->add_next<AnimationEvent>(new_pos, "lightning");
             animation->add_next<AudioEvent>("thunder");
         }
