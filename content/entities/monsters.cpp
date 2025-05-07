@@ -33,7 +33,7 @@ namespace Monsters {
         monster->set_max_health(20);
         monster->set_team(Team::Monster);
         monster->behavior = default_behavior;
-        monster->add_to_inventory(std::make_shared<Knife>(1));
+        monster->add_to_inventory(std::make_shared<Bite>(1));
     }
 
     std::unique_ptr<Action> default_behavior(Engine& engine, Entity& entity) {
